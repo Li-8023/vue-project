@@ -1,7 +1,7 @@
 <template>
 	<div class="app">
 		<!-- Sidebar -->
-		<LeftSidebar />
+		<!--<LeftSidebar />-->
 
 		<!-- Content -->
 		<router-view />
