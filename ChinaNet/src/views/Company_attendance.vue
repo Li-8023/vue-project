@@ -1,5 +1,13 @@
 <template>
-    <main class="Company-attendance-page">
-        <h1>公司考勤</h1>
-    </main>
+    <div>
+        <!-- Sidebar -->
+		<LeftSidebar />
+        
+    </div>
+    
+    
 </template>
+
+<script setup>
+import LeftSidebar from '../components/LeftSidebar.vue';
+</script>

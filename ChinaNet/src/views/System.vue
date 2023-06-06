@@ -1,5 +1,13 @@
 <template>
-    <main class="system-page">
-        <h1>系统管理</h1>
-    </main>
+    <div>
+        <!-- Sidebar -->
+		<LeftSidebar />
+        
+    </div>
+    
+    
 </template>
+
+<script setup>
+import LeftSidebar from '../components/LeftSidebar.vue';
+</script> 

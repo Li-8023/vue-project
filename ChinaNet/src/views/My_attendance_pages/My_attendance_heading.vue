@@ -1,22 +1,19 @@
 <template>
     <div class="page">
-        <div class="left-sidebar">
-            <!-- Sidebar -->
-            <LeftSidebar />
-        </div>
-        <div class="heading-container">
-                <headingPage />
-        </div>
         <div class="content">
-            <!-- Content -->
-            <router-view />
+        <div class="button-group">
+            <button @click="goToPage('BeiAn')">备案申请</button>
+            <button @click="goToPage('GongDan')">工单审批</button>
+            <button @click="goToPage('KaoQinQingDan')">考勤清单</button>
+            <button @click="goToPage('KaoQinTongJi')">考勤统计</button>
+        </div>
+        <!-- Content -->
+        <router-view />
         </div>
     </div>
 </template>
 
 <script setup>
-import LeftSidebar from '../components/LeftSidebar.vue';
-import headingPage from '../views/My_attendance_pages/My_attendance_heading.vue';
 </script>
 
 <script>
@@ -37,7 +34,6 @@ export default {
 .page {
   display: flex;
 }
-
 
 .left-sidebar {
   width: calc(2rem + 32px);

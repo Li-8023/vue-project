@@ -1,5 +1,13 @@
 <template>
-    <main class="Permission-page">
-        <h1>权限管理</h1>
-    </main>
+    <div>
+        <!-- Sidebar -->
+		<LeftSidebar />
+        
+    </div>
+    
+    
 </template>
+
+<script setup>
+import LeftSidebar from '../components/LeftSidebar.vue';
+</script>
