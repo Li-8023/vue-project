@@ -24,6 +24,7 @@
 </template>
 
 <script>
+import axios from 'axios';
 export default {
   data() {
     return {
@@ -43,20 +44,33 @@ export default {
                 this.$router.push('/mainView');
             }
     },
-    login() {
-         // Here you can implement the login functionality,
-            // such as sending the login request to a server or performing client-side validation.
-            // You can access the entered username and password from this.username and this.password respectively.
-        if (!this.username || !this.password) {
-            // Check if either username or password is empty
-            this.showWarning = true; // Show warning message
-        } else {
-            // Both username and password are entered
-            this.showWarning = false; // Hide warning message
-            console.log('Login request:', this.username, this.password);
-            // Proceed with login functionality
+    async login() {
+      if (!this.username || !this.password) {
+        // Check if either username or password is empty
+        this.showWarning = true; // Show warning message
+      } else {
+        // Both username and password are entered
+        this.showWarning = false; // Hide warning message
+
+        try {
+          // Make API call to verify the login credentials
+          const response = await axios.post('/api/login', {
+            username: this.username,
+            password: this.password,
+          });
+
+          const { success } = response.data;
+
+          if (success) {
+            console.log('Login successful');
+            this.$router.push('/mainView');
+          } else {
+            console.log('Invalid username or password');
+          }
+        } catch (error) {
+          console.error('Error checking login credentials:', error);
         }
-        console.log('Login request:', this.username, this.password);
+      }
     },
   },
 };
@@ -129,6 +143,7 @@ button.custom-button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add box shadow */
 }
 
 @media (max-width: 768px) {
