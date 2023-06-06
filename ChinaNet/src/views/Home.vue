@@ -16,7 +16,7 @@
                             <input type="password" id="password" v-model="password" required class="input-field"
                                 placeholder="请输入密码" />
                         </div>
-                        <button type="submit">Login</button>
+                        <el-button type="success" round @click="goToNext">登录</el-button>
                     </form>
                 </div>
             </div>
@@ -33,6 +33,9 @@ export default {
         };
     },
     methods: {
+        goToNext() {
+            this.$router.push('/mainView');
+        },
         login() {
             // Here you can implement the login functionality,
             // such as sending the login request to a server or performing client-side validation.
