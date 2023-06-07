@@ -1,10 +1,18 @@
 <template>
-    <div>
+     <div class="page">
+        <div class="left-sidebar">
         <!-- Sidebar -->
-		<LeftSidebar />
-        
-    </div>
-    
+        <LeftSidebar />
+        </div>
+        <div class="heading-container">
+        <h1>hello</h1>
+        <headingPage></headingPage>
+        </div>
+        <div class="content">
+        <!-- Content -->
+        <router-view />
+        </div>
+  </div>
     
 </template>
 

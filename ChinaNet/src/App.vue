@@ -1,15 +1,12 @@
 <template>
 	<div class="app">
-		<!-- Sidebar -->
-		<!--<LeftSidebar />-->
-
 		<!-- Content -->
 		<router-view />
 	</div>
 </template>
 
 <script setup>
-import LeftSidebar from './components/LeftSidebar.vue';
+// import LeftSidebar from './components/LeftSidebar.vue';
 
 </script>
 

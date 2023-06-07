@@ -2,9 +2,8 @@
     <div class="container">
         <div class="background-image">
             <div class="window">
+                <h1 class="heading">吉安电信考勤网</h1> <!-- Move the text here -->
                 <div class="content">
-                    <h1 class="heading">吉安电信考勤登录界面</h1>
-                    <div class="divider"></div>
                     <form @submit.prevent="login">
                         <div class="form-group">
                             <input type="text" id="username" v-model="username" required class="input-field"
@@ -22,6 +21,7 @@
         </div>
     </div>
 </template>
+
 
 <script>
 import axios from 'axios';
@@ -78,9 +78,11 @@ export default {
 
 <style>
 .heading {
-  font-size: 24px; /* Adjust the font size to your preference */
-  color: #333; /* Adjust the color to your preference */
+  margin-left: 2rem;
+  font-size: 24px !important;
+  color: #333 !important;
 }
+
 .warning {
   color: red;
 }

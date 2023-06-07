@@ -52,7 +52,7 @@ export default {
 }
 
 button {
- padding: 10px 20px;
+  padding: 10px 20px;
   background-color: transparent;
   color: #007bff;
   border: none;

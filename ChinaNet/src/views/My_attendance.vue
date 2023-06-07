@@ -1,22 +1,23 @@
 <template>
-    <div class="page">
-        <div class="left-sidebar">
-            <!-- Sidebar -->
-            <LeftSidebar />
-        </div>
-        <div class="heading-container">
-                <headingPage />
-        </div>
-        <div class="content">
-            <!-- Content -->
-            <router-view />
-        </div>
+  <div class="page">
+    <div class="left-sidebar">
+      <!-- Sidebar -->
+      <LeftSidebar />
     </div>
+    <div class="heading-container" style="margin-top: 20rem;">
+      
+      <heading></heading>
+    </div>
+    <div class="content">
+      <!-- Content -->
+      <router-view />
+    </div>
+  </div>
 </template>
 
 <script setup>
 import LeftSidebar from '../components/LeftSidebar.vue';
-import headingPage from '../views/My_attendance_pages/My_attendance_heading.vue';
+import heading from '../views/My_attendance_pages/heading.vue'
 </script>
 
 <script>
@@ -31,8 +32,6 @@ export default {
   }
 };
 </script>
-
-
 <style>
 .page {
   display: flex;

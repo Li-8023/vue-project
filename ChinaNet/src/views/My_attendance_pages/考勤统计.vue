@@ -1,6 +1,6 @@
 <template>
   <div>
-     <div class="heading-container">
+     <div class="heading-container" style="margin-top: 20rem;">
         <headingPage />
      </div>
     <h1 class="hello">hello</h1>
@@ -9,7 +9,7 @@
   
 </template>
 <script setup>
-import headingPage from './My_attendance_heading.vue';
+import headingPage from './heading.vue';
 import LeftSidebar from '../../components/LeftSidebar.vue';
 </script>
 
