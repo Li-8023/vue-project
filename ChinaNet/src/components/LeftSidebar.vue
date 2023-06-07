@@ -12,6 +12,10 @@
 
     <h3>目录</h3>
     <div class="menu">
+      <router-link to="/mainView/permission" class="button">
+        <span class="material-symbols-outlined"> account_circle </span>
+        <span class="text">这里填写用户名称</span>
+      </router-link>
       <router-link to="/mainView" class="button">
         <span class="material-symbols-outlined"> document_scanner </span>
         <span class="text">首页</span>
@@ -39,7 +43,6 @@
     </div>
 
     <div class="flex"></div>
-
     <div class="menu"></div>
   </aside>
 </template>

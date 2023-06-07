@@ -6,10 +6,10 @@ import CompanyAtt from '../views/Company_attendance.vue';
 import MyAtt from '../views/My_attendance.vue';
 import Permission from '../views/Permission.vue';
 import System from '../views/System.vue';
-import BeiAn from '../views/My_attendance_pages/备案申请.vue';
-import GongDan from '../views/My_attendance_pages/工单审批.vue';
-import KaoQinQingDan from '../views/My_attendance_pages/考勤清单.vue';
-import KaoQinTongJi from '../views/My_attendance_pages/考勤统计.vue';
+import BeiAn from '../views/My_attendance_pages/BeiAn.vue';
+import GongDan from '../views/My_attendance_pages/GongDan.vue';
+import KaoQinQingDan from '../views/My_attendance_pages/KaoQingQinDan.vue';
+import KaoQinTongJi from '../views/My_attendance_pages/TongJi.vue';
 
 const routes = [
     {

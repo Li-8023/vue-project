@@ -1,6 +1,6 @@
 <template>
   <div>
-     <div class="heading-container" style="margin-top: 20rem;">
+     <div class="heading-container" style="margin-top: 19rem;">
         <headingPage />
      </div>
     <h1 class="hello">hello</h1>

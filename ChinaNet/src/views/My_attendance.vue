@@ -4,7 +4,7 @@
       <!-- Sidebar -->
       <LeftSidebar />
     </div>
-    <div class="heading-container" style="margin-top: 20rem;">
+    <div class="heading-container" style="margin-top: 19rem;">
       
       <heading></heading>
     </div>
